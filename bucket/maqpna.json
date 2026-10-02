@@ -1,0 +1,36 @@
+{
+    "version": "0.1.0",
+    "description": "MAQPNA CLIs (maqpna, maqpna-sovereign): the sovereign runtime for AI agents on Kubernetes.",
+    "homepage": "https://maqpna.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.0/maqpna_0.1.0_windows_amd64.zip",
+            "hash": "0a547ce644018091c9a07dee6a32563a9cbef0e876ec6deeadfdde904facf610"
+        },
+        "arm64": {
+            "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.0/maqpna_0.1.0_windows_arm64.zip",
+            "hash": "e384de74ed6b65598319cedaa0b4f25ec44cafba35a099e313acaebb5a074707"
+        }
+    },
+    "bin": [
+        "maqpna.exe",
+        "maqpna-sovereign.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/AzmxAI/maqpna-releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
