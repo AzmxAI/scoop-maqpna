@@ -1,20 +1,33 @@
 {
-    "version": "0.1.0",
-    "description": "MAQPNA CLIs (maqpna, maqpna-sovereign): the sovereign runtime for AI agents on Kubernetes.",
+    "version": "0.1.1",
+    "description": "Sovereign runtime for AI agents: policy, approvals, DLP and audit. Installs the maqpna CLI, its lifecycle plugin maqpna-install and maqpna-sovereign.",
     "homepage": "https://maqpna.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.0/maqpna_0.1.0_windows_amd64.zip",
-            "hash": "0a547ce644018091c9a07dee6a32563a9cbef0e876ec6deeadfdde904facf610"
+            "url": [
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna_0.1.1_windows_amd64.zip",
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna-install_0.1.1_windows_amd64.zip"
+            ],
+            "hash": [
+                "34b9097daf8b3ab23bf115297d3ef93e30476e6f56652ed9d9b7e3d77f07766c",
+                "ad10183124939251dc97132961960e32b5a5727e43c8f3d390f2d426d742e319"
+            ]
         },
         "arm64": {
-            "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.0/maqpna_0.1.0_windows_arm64.zip",
-            "hash": "e384de74ed6b65598319cedaa0b4f25ec44cafba35a099e313acaebb5a074707"
+            "url": [
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna_0.1.1_windows_arm64.zip",
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna-install_0.1.1_windows_arm64.zip"
+            ],
+            "hash": [
+                "3b87c96a4bc7f81fc46b94110b27f7f0aff8f2c744fc52638fc884c9d58cfe93",
+                "2e4fe77447f5a0b9196dc97935d43c0791555e00f39a86b0f3540cd61ae3d384"
+            ]
         }
     },
     "bin": [
         "maqpna.exe",
+        "maqpna-install.exe",
         "maqpna-sovereign.exe"
     ],
     "checkver": {
@@ -23,10 +36,16 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_amd64.zip"
+                "url": [
+                    "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_amd64.zip",
+                    "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna-install_$version_windows_amd64.zip"
+                ]
             },
             "arm64": {
-                "url": "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_arm64.zip"
+                "url": [
+                    "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna_$version_windows_arm64.zip",
+                    "https://github.com/AzmxAI/maqpna-releases/releases/download/v$version/maqpna-install_$version_windows_arm64.zip"
+                ]
             }
         },
         "hash": {
