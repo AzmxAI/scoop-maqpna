@@ -1,27 +1,30 @@
 {
-    "version": "0.1.1",
+    "version": "2.2.0",
     "description": "Sovereign runtime for AI agents: policy, approvals, DLP and audit. Installs the maqpna CLI, its lifecycle plugin maqpna-install and maqpna-sovereign.",
     "homepage": "https://maqpna.com",
-    "license": "Apache-2.0",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://maqpna.com/terms"
+    },
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna_0.1.1_windows_amd64.zip",
-                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna-install_0.1.1_windows_amd64.zip"
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v2.2.0/maqpna_2.2.0_windows_amd64.zip",
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v2.2.0/maqpna-install_2.2.0_windows_amd64.zip"
             ],
             "hash": [
-                "34b9097daf8b3ab23bf115297d3ef93e30476e6f56652ed9d9b7e3d77f07766c",
-                "ad10183124939251dc97132961960e32b5a5727e43c8f3d390f2d426d742e319"
+                "eecaa24cf2e4c41489943eaaad933eb8bf35d08659db15900fd2fb72f7cec72f",
+                "8b635aa99393d7bd6a694a16f2f4b503e599e8eb9cdcc2a199a0bb30c0be964c"
             ]
         },
         "arm64": {
             "url": [
-                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna_0.1.1_windows_arm64.zip",
-                "https://github.com/AzmxAI/maqpna-releases/releases/download/v0.1.1/maqpna-install_0.1.1_windows_arm64.zip"
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v2.2.0/maqpna_2.2.0_windows_arm64.zip",
+                "https://github.com/AzmxAI/maqpna-releases/releases/download/v2.2.0/maqpna-install_2.2.0_windows_arm64.zip"
             ],
             "hash": [
-                "3b87c96a4bc7f81fc46b94110b27f7f0aff8f2c744fc52638fc884c9d58cfe93",
-                "2e4fe77447f5a0b9196dc97935d43c0791555e00f39a86b0f3540cd61ae3d384"
+                "9e2adafcd042d8864895ca8aec6c8f9c5b8d8d0acdb3879f5c44286b65589d2d",
+                "4973e634ce3bc353dfc8880481f0f0ef622e946a60fe565203e3c4bc70c839ef"
             ]
         }
     },
